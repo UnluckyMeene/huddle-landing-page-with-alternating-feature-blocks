@@ -1,0 +1,331 @@
+/***** GLOBALS *****/
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --blue: hsl(208, 11%, 55%);
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+@media (min-width: 992px) {
+    header {
+        background: url("../images/bg-hero-desktop.svg") no-repeat center right/cover, var(--pale-cyan);
+    }
+    
+    footer {
+        background-color: var(--dark-cyan);
+        padding: 300px 140px 100px 140px;
+        margin-top: -120px;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+    
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        display: block;
+        margin-top: 20px;
+    }
+    
+    h1, h2, p { color: var(--dark-cyan);}
+    h1 { font-size: 45px;}
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    .paddingHeader {
+        padding: 50px 140px;
+    }
+    
+    .resize {
+        width: 80%;
+    }
+    
+    #mainCallToAction {
+        background-color: #FFFFFF;
+        padding: 10px 30px;
+        border-radius: 30px;
+        text-transform: capitalize;
+        color: var(--dark-cyan);
+        font-weight: 700;
+        
+    }
+    
+    #getStartedButton {
+        display: inline-block;
+        margin-top: 30px;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 30px;
+        background-color: var(--pink);
+        padding: 15px 60px;
+    }
+    
+    #growTogether {
+        margin-top: 200px;
+        padding-left: 170px;
+        padding-right: 170px;
+    }
+    
+    #growTogether > div.row,
+    #flowingConversations > div.row,
+    #yourUsers > div.row {
+        border-radius: 30px;
+        padding: 70px 50px 70px 200px;
+    }
+    
+    #growTogether p,
+    #yourUsers p {
+        color: var(--blue);
+        max-width: 500px;
+    }
+    
+    #flowingConversations,
+    #yourUsers {
+        margin-top: 50px;
+        padding-left: 170px;
+        padding-right: 170px;
+    }
+    
+    #flowingConversations p {
+        color: var(--blue);
+    }
+    
+    #flowingConversations > div.row> div:last-of-type {
+        padding-left: 250px;
+    }
+    
+    #buildCommunity {
+        position: relative;
+        background-color: #FFFFFF;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-radius: 30px;
+        max-width: 55%;
+        margin-top: 200px;
+        padding: 80px 0;
+    }
+    
+    #buildCommunityButton {
+        display: inline-block;
+        margin-top: 20px;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 600px;
+        border-radius: 30px;
+        background-color: var(--pink);
+        padding: 20px 110px;
+    }
+    
+    footer > div.row img {
+        filter: brightness(0) invert(1);
+    }
+    
+    .innerRow {
+        margin-top: 20px;
+        color: #FFFFFF;
+    }
+    
+    .innerRow > div:first-of-type {
+        text-align: center;
+    }
+    
+    .reverse {
+        margin-top: 21px;
+        filter: brightness(0) invert(1);
+        margin-right: 10px;
+        padding: 10px;
+        border: 1px solid #FFFFFF;
+        border-radius: 60px;
+    }
+    
+    .fb-fix {
+        padding: 10px 13px;
+    }
+    
+    #copyright {
+        margin-top: 30px;
+        float: right; 
+    }
+    
+}
+
+@media (max-width: 767.98px){
+    header {
+        background: url("../images/bg-hero-mobile.svg") no-repeat center right/cover, var(--pale-cyan);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    nav > a > img {
+        height: 20px;
+    }
+    
+    h1, h2, p { color: var(--dark-cyan);}
+    
+    h1 {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    
+    #growTogether h2,
+    #flowingConversations h2,
+    #yourUsers h2 {
+        margin-top: 50px;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    .resize {
+        width: 90%;
+    }
+    
+    #mainCallToAction {
+        font-size: 14px;
+        background-color: #FFFFFF;
+        padding: 8px 20px;
+        border-radius: 20px;
+        text-transform: capitalize;
+        color: var(--dark-cyan);
+        font-weight: 700;
+    }
+    
+    .paddingHeader {
+        padding: 10px;
+    }
+    
+    #getStartedButton {
+        display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 30px;
+        background-color: var(--pink);
+        padding: 15px 60px;
+    }
+    
+    #growTogether {
+        margin-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #growTogether > div.row,
+    #flowingConversations > div.row,
+    #yourUsers > div.row {
+        text-align: center;
+        border-radius: 30px;
+        padding: 50px 25px 40px 25px;
+    }
+    
+    #growTogether p,
+    #yourUsers p {
+        color: var(--blue);
+    }
+    
+    #flowingConversations,
+    #yourUsers {
+        margin-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #flowingConversations p {
+        color: var(--blue);
+    }   
+    
+    #buildCommunity {
+        position: relative;
+        background-color: #FFFFFF;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-radius: 30px;
+        margin-top: 120px;
+        padding: 50px 20px 40px 20px;
+    }
+    
+    #buildCommunity h2 {
+        font-size: 18px;
+    }
+    
+    #buildCommunityButton {
+        display: inline-block;
+        margin-top: 10px;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 600px;
+        border-radius: 30px;
+        background-color: var(--pink);
+        padding: 10px 40px;
+    }
+    
+    footer {
+        background-color: var(--dark-cyan);
+        padding: 200px 20px 0 20px;
+        margin-top: -70px;
+        font-size: 18px;
+        color: #FFFFFF;
+    } 
+    
+    footer > div.row > img {
+        filter: brightness(0) invert(1);
+        padding-left: 20px;
+    }
+    
+    .innerRow {
+        margin-top: 20px;
+        color: #FFFFFF;
+    }
+    
+    .innerRow > div:first-of-type {
+        text-align: center;
+    }
+    
+    .innerRow img {
+        height: 20px;
+    }
+    
+    #siteMap {
+        margin-top: 50px;
+    }
+    
+    .reverse {
+        margin-top: 21px;
+        filter: brightness(0) invert(1);
+        margin-right: 10px;
+        padding: 10px;
+        border: 1px solid #FFFFFF;
+        border-radius: 60px;
+    }
+    
+    .fb-fix {
+        padding: 10px 13px;
+    }
+    
+    #social {
+        margin-top: 50px;
+    }
+    
+    #copyright {
+        justify-content: center;
+        padding: 30px 0;
+        font-size: 14px;
+        text-align: center;
+    }
+}
